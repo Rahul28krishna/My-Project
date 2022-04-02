@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [My Test Suite]">
+  <test thread-count="5" name="Chrome Test (failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="executeClasses.ExecuteManageDeliverBoyPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyThatUserIsAbleToCreateNewDeliveryBoy"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageDeliverBoyPage -->
+      <class name="executeClasses.ExecuteManageExpense">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyUserAbleToAddNewExpense"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageExpense -->
+    </classes>
+  </test> <!-- Chrome Test (failed) -->
+  <test thread-count="5" name="Edge Test(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="executeClasses.ExecuteManageDeliverBoyPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyThatUserIsAbleToCreateNewDeliveryBoy"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageDeliverBoyPage -->
+      <class name="executeClasses.ExecuteManageExpense">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyUserAbleToAddNewExpense"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageExpense -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+  <test thread-count="5" name="fireFox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="executeClasses.ExecuteManageOrder">
+        <methods>
+          <include name="verifyWorkingOfResetButton"/>
+          <include name="verifyUserCanChangeDeliveryTime"/>
+          <include name="afterMethod"/>
+          <include name="verifyUserIsAbleToViewOrderDetails"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageOrder -->
+      <class name="executeClasses.ExecuteManageDeliverBoyPage">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyThatUserIsAbleToCreateNewDeliveryBoy"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageDeliverBoyPage -->
+      <class name="executeClasses.ExecuteManageLocation">
+        <methods>
+          <include name="verifyUserAbleToSearchLocationWithCountryName"/>
+          <include name="afterMethod"/>
+          <include name="verifyUserAbleToChangeLocationStatus"/>
+          <include name="beforeMethod"/>
+          <include name="verifyUserAbleToAddLocation"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageLocation -->
+      <class name="executeClasses.ExecuteManageGroups">
+        <methods>
+          <include name="verifyUserAbleToCreateGroup"/>
+          <include name="verifyUserAbleToSearchASpecificGroup"/>
+          <include name="afterMethod"/>
+          <include name="verifyNoTwoGroupsWithSameNameCanBeCreated"/>
+          <include name="verifyUserCanDeleteASpecificGroup"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageGroups -->
+      <class name="executeClasses.ExecuteManageCategory">
+        <methods>
+          <include name="verifyUserAbleToNavigateToAddSubCategoryPage"/>
+          <include name="afterMethod"/>
+          <include name="verifyUserAbleToNavigateToAddCategoryPage"/>
+          <include name="verifyUserCanEditSubCategoryInformation"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageCategory -->
+      <class name="executeClasses.ExecuteLogin">
+        <methods>
+          <include name="verifyLoginButtonText"/>
+          <include name="verifyUserAbleToLoginWithValidCredentials"/>
+          <include name="verifyUserIsAbleToClickRemembermeCheckBox"/>
+          <include name="verifyThatUserCannotLoginWithInvalidCredentials"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteLogin -->
+      <class name="executeClasses.ExecuteManageExpense">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyUserAbleToAddNewExpense"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteManageExpense -->
+      <class name="executeClasses.ExecuteExpenseCategory">
+        <methods>
+          <include name="verifyNoTwoExpensesWithSameNameCanBeCreated"/>
+          <include name="verifyUserAbleToAddExpenseCategory"/>
+          <include name="verifyTextOfNewButton"/>
+          <include name="afterMethod"/>
+          <include name="verifyThatUserIsAbleToSearchExpenseCategory"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- executeClasses.ExecuteExpenseCategory -->
+    </classes>
+  </test> <!-- fireFox Test(failed) -->
+</suite> <!-- Failed suite [My Test Suite] -->

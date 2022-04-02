@@ -1,0 +1,474 @@
+<html>
+<head>
+<title>TestNG:  Chrome Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 21 13:59:42 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>68 seconds (68361 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='executeClasses.ExecuteManageCategory.verifyUserAbleToNavigateToAddSubCategoryPage()'><b>verifyUserAbleToNavigateToAddSubCategoryPage</b><br>Test class: executeClasses.ExecuteManageCategory</td>
+<td><div><pre>java.lang.AssertionError: expected [Add Sub Category | 7rmart supermarket] but found [Add Group | 7rmart supermarket]
+	at executeClasses.ExecuteManageCategory.verifyUserAbleToNavigateToAddSubCategoryPage(ExecuteManageCategory.java:76)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1959198983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1959198983'><pre>java.lang.AssertionError: expected [Add Sub Category | 7rmart supermarket] but found [Add Group | 7rmart supermarket]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at executeClasses.ExecuteManageCategory.verifyUserAbleToNavigateToAddSubCategoryPage(ExecuteManageCategory.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>2</td>
+<td>executeClasses.ExecuteManageCategory@79defdc</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageExpense.verifyUserAbleToAddNewExpense()'><b>verifyUserAbleToAddNewExpense</b><br>Test class: executeClasses.ExecuteManageExpense</td>
+<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=99.0.4844.82)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;LAPTOP-FCF0NK19&apos;, ip: &apos;192.168.10.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc8d1e8b0a482cf4c3246015939202ba, actions {actions=[org.openqa.selenium.interactions.Sequence@2f2737bf]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60635/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dc8d1e8b0a482cf4c3246015939202ba
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+	at Utilities.GeneralUtilities.mouseHoverElement(GeneralUtilities.java:28)
+	at elementRepository.ManageExpensePage.mouseHoverSaveButton(ManageExpensePage.java:88)
+	at executeClasses.ExecuteManageExpense.verifyUserAbleToAddNewExpense(ExecuteManageExpense.java:45)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1145996167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1145996167'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=99.0.4844.82)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;LAPTOP-FCF0NK19&apos;, ip: &apos;192.168.10.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dc8d1e8b0a482cf4c3246015939202ba, actions {actions=[org.openqa.selenium.interactions.Sequence@2f2737bf]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60635/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dc8d1e8b0a482cf4c3246015939202ba
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:626)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:656)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:612)
+	at Utilities.GeneralUtilities.mouseHoverElement(GeneralUtilities.java:28)
+	at elementRepository.ManageExpensePage.mouseHoverSaveButton(ManageExpensePage.java:88)
+	at executeClasses.ExecuteManageExpense.verifyUserAbleToAddNewExpense(ExecuteManageExpense.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>3</td>
+<td>executeClasses.ExecuteManageExpense@16612a51</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageLocation.verifyUserAbleToAddLocation()'><b>verifyUserAbleToAddLocation</b><br>Test class: executeClasses.ExecuteManageLocation</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;LAPTOP-FCF0NK19&apos;, ip: &apos;192.168.10.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4796a34abffb8085168b351a3c58f90f, clickElement {id=959d4429-de69-47fc-b4d3-4fef570d03ce}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60727/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (4796a34abffb8085168b351a3c58f90f)] -&gt; id: st_id]] -&gt; xpath: .//option[normalize-space(.) = &quot;Bristol&quot;]]
+Session ID: 4796a34abffb8085168b351a3c58f90f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:117)
+	at Utilities.GeneralUtilities.selectFromDropDown(GeneralUtilities.java:44)
+	at elementRepository.ManageLocationPage.selectState(ManageLocationPage.java:88)
+	at executeClasses.ExecuteManageLocation.verifyUserAbleToAddLocation(ExecuteManageLocation.java:94)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace472704722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace472704722'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;LAPTOP-FCF0NK19&apos;, ip: &apos;192.168.10.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4796a34abffb8085168b351a3c58f90f, clickElement {id=959d4429-de69-47fc-b4d3-4fef570d03ce}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60727/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (4796a34abffb8085168b351a3c58f90f)] -&gt; id: st_id]] -&gt; xpath: .//option[normalize-space(.) = &quot;Bristol&quot;]]
+Session ID: 4796a34abffb8085168b351a3c58f90f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:117)
+	at Utilities.GeneralUtilities.selectFromDropDown(GeneralUtilities.java:44)
+	at elementRepository.ManageLocationPage.selectState(ManageLocationPage.java:88)
+	at executeClasses.ExecuteManageLocation.verifyUserAbleToAddLocation(ExecuteManageLocation.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>4</td>
+<td>executeClasses.ExecuteManageLocation@54e041a4</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageDeliverBoyPage.verifyThatUserIsAbleToCreateNewDeliveryBoy()'><b>verifyThatUserIsAbleToCreateNewDeliveryBoy</b><br>Test class: executeClasses.ExecuteManageDeliverBoyPage</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 782)
+  (Session info: chrome=99.0.4844.82)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;LAPTOP-FCF0NK19&apos;, ip: &apos;192.168.10.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05313b64722e18a71c8e60dd11314775, clickElement {id=d609f56f-9b0c-41bf-b226-6114b309a180}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60997/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (05313b64722e18a71c8e60dd11314775)] -&gt; name: create]
+Session ID: 05313b64722e18a71c8e60dd11314775
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at Utilities.GeneralUtilities.clickOnElement(GeneralUtilities.java:23)
+	at elementRepository.ManageDeliveryBoy.clickSaveButton(ManageDeliveryBoy.java:79)
+	at executeClasses.ExecuteManageDeliverBoyPage.verifyThatUserIsAbleToCreateNewDeliveryBoy(ExecuteManageDeliverBoyPage.java:34)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1176661293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1176661293'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 782)
+  (Session info: chrome=99.0.4844.82)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;LAPTOP-FCF0NK19&apos;, ip: &apos;192.168.10.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05313b64722e18a71c8e60dd11314775, clickElement {id=d609f56f-9b0c-41bf-b226-6114b309a180}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60997/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (05313b64722e18a71c8e60dd11314775)] -&gt; name: create]
+Session ID: 05313b64722e18a71c8e60dd11314775
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at Utilities.GeneralUtilities.clickOnElement(GeneralUtilities.java:23)
+	at elementRepository.ManageDeliveryBoy.clickSaveButton(ManageDeliveryBoy.java:79)
+	at executeClasses.ExecuteManageDeliverBoyPage.verifyThatUserIsAbleToCreateNewDeliveryBoy(ExecuteManageDeliverBoyPage.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>3</td>
+<td>executeClasses.ExecuteManageDeliverBoyPage@638ef7ed</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='executeClasses.ExecuteLogin.verifyLoggedUsername()'><b>verifyLoggedUsername</b><br>Test class: executeClasses.ExecuteLogin</td>
+<td></td>
+<td>0</td>
+<td>executeClasses.ExecuteLogin@1fc2b765</td></tr>
+<tr>
+<td title='executeClasses.ExecuteExpenseCategory.verifyThatUserIsAbleToSearchExpenseCategory()'><b>verifyThatUserIsAbleToSearchExpenseCategory</b><br>Test class: executeClasses.ExecuteExpenseCategory</td>
+<td></td>
+<td>1</td>
+<td>executeClasses.ExecuteExpenseCategory@7d9f158f</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageCOD.verifyUserAbleToEditCODInformation()'><b>verifyUserAbleToEditCODInformation</b><br>Test class: executeClasses.ExecuteManageCOD</td>
+<td></td>
+<td>1</td>
+<td>executeClasses.ExecuteManageCOD@45efd90f</td></tr>
+<tr>
+<td title='executeClasses.ExecuteLogin.verifyUserAbleToLoginWithValidCredentials()'><b>verifyUserAbleToLoginWithValidCredentials</b><br>Test class: executeClasses.ExecuteLogin</td>
+<td></td>
+<td>0</td>
+<td>executeClasses.ExecuteLogin@1fc2b765</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageOrder.verifyWorkingOfResetButton()'><b>verifyWorkingOfResetButton</b><br>Test class: executeClasses.ExecuteManageOrder</td>
+<td></td>
+<td>2</td>
+<td>executeClasses.ExecuteManageOrder@2c78324b</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageGroups.verifyUserAbleToCreateGroup()'><b>verifyUserAbleToCreateGroup</b><br>Test class: executeClasses.ExecuteManageGroups</td>
+<td></td>
+<td>3</td>
+<td>executeClasses.ExecuteManageGroups@7283d3eb</td></tr>
+<tr>
+<td title='executeClasses.ExecuteLogin.verifyLoginButtonText()'><b>verifyLoginButtonText</b><br>Test class: executeClasses.ExecuteLogin</td>
+<td></td>
+<td>0</td>
+<td>executeClasses.ExecuteLogin@1fc2b765</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageGroups.verifyUserCanDeleteASpecificGroup()'><b>verifyUserCanDeleteASpecificGroup</b><br>Test class: executeClasses.ExecuteManageGroups</td>
+<td></td>
+<td>3</td>
+<td>executeClasses.ExecuteManageGroups@7283d3eb</td></tr>
+<tr>
+<td title='executeClasses.ExecuteExpenseCategory.verifyNoTwoExpensesWithSameNameCanBeCreated()'><b>verifyNoTwoExpensesWithSameNameCanBeCreated</b><br>Test class: executeClasses.ExecuteExpenseCategory</td>
+<td></td>
+<td>1</td>
+<td>executeClasses.ExecuteExpenseCategory@7d9f158f</td></tr>
+<tr>
+<td title='executeClasses.ExecuteExpenseCategory.verifyTextOfNewButton()'><b>verifyTextOfNewButton</b><br>Test class: executeClasses.ExecuteExpenseCategory</td>
+<td></td>
+<td>4</td>
+<td>executeClasses.ExecuteExpenseCategory@7d9f158f</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageLocation.verifyUserAbleToChangeLocationStatus()'><b>verifyUserAbleToChangeLocationStatus</b><br>Test class: executeClasses.ExecuteManageLocation</td>
+<td></td>
+<td>4</td>
+<td>executeClasses.ExecuteManageLocation@54e041a4</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageCategory.verifyUserCanEditSubCategoryInformation()'><b>verifyUserCanEditSubCategoryInformation</b><br>Test class: executeClasses.ExecuteManageCategory</td>
+<td></td>
+<td>3</td>
+<td>executeClasses.ExecuteManageCategory@79defdc</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageGroups.verifyErrorMessageForInvalidSearch()'><b>verifyErrorMessageForInvalidSearch</b><br>Test class: executeClasses.ExecuteManageGroups</td>
+<td></td>
+<td>1</td>
+<td>executeClasses.ExecuteManageGroups@7283d3eb</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageCategory.verifyUserAbleToNavigateToAddCategoryPage()'><b>verifyUserAbleToNavigateToAddCategoryPage</b><br>Test class: executeClasses.ExecuteManageCategory</td>
+<td></td>
+<td>3</td>
+<td>executeClasses.ExecuteManageCategory@79defdc</td></tr>
+<tr>
+<td title='executeClasses.ExecuteExpenseCategory.verifyErrorMessageForNoMatch()'><b>verifyErrorMessageForNoMatch</b><br>Test class: executeClasses.ExecuteExpenseCategory</td>
+<td></td>
+<td>1</td>
+<td>executeClasses.ExecuteExpenseCategory@7d9f158f</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageLocation.verifyUserAbleToSearchLocationWithCountryName()'><b>verifyUserAbleToSearchLocationWithCountryName</b><br>Test class: executeClasses.ExecuteManageLocation</td>
+<td></td>
+<td>2</td>
+<td>executeClasses.ExecuteManageLocation@54e041a4</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageGroups.verifyUserAbleToSearchASpecificGroup()'><b>verifyUserAbleToSearchASpecificGroup</b><br>Test class: executeClasses.ExecuteManageGroups</td>
+<td></td>
+<td>1</td>
+<td>executeClasses.ExecuteManageGroups@7283d3eb</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageOrder.verifyUserIsAbleToViewOrderDetails()'><b>verifyUserIsAbleToViewOrderDetails</b><br>Test class: executeClasses.ExecuteManageOrder</td>
+<td></td>
+<td>2</td>
+<td>executeClasses.ExecuteManageOrder@2c78324b</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageCategory.verifyTextOfNextButton()'><b>verifyTextOfNextButton</b><br>Test class: executeClasses.ExecuteManageCategory</td>
+<td></td>
+<td>1</td>
+<td>executeClasses.ExecuteManageCategory@79defdc</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageOrder.verifyErrorMessageforNoSearch()'><b>verifyErrorMessageforNoSearch</b><br>Test class: executeClasses.ExecuteManageOrder</td>
+<td></td>
+<td>2</td>
+<td>executeClasses.ExecuteManageOrder@2c78324b</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageOrder.verifyUserCanChangeDeliveryTime()'><b>verifyUserCanChangeDeliveryTime</b><br>Test class: executeClasses.ExecuteManageOrder</td>
+<td></td>
+<td>5</td>
+<td>executeClasses.ExecuteManageOrder@2c78324b</td></tr>
+<tr>
+<td title='executeClasses.ExecuteExpenseCategory.verifyUserAbleToAddExpenseCategory()'><b>verifyUserAbleToAddExpenseCategory</b><br>Test class: executeClasses.ExecuteExpenseCategory</td>
+<td></td>
+<td>1</td>
+<td>executeClasses.ExecuteExpenseCategory@7d9f158f</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageLocation.verifyErrorMessageForNoMatch()'><b>verifyErrorMessageForNoMatch</b><br>Test class: executeClasses.ExecuteManageLocation</td>
+<td></td>
+<td>1</td>
+<td>executeClasses.ExecuteManageLocation@54e041a4</td></tr>
+<tr>
+<td title='executeClasses.ExecuteManageGroups.verifyNoTwoGroupsWithSameNameCanBeCreated()'><b>verifyNoTwoGroupsWithSameNameCanBeCreated</b><br>Test class: executeClasses.ExecuteManageGroups</td>
+<td></td>
+<td>2</td>
+<td>executeClasses.ExecuteManageGroups@7283d3eb</td></tr>
+<tr>
+<td title='executeClasses.ExecuteLogin.verifyThatUserCannotLoginWithInvalidCredentials()'><b>verifyThatUserCannotLoginWithInvalidCredentials</b><br>Test class: executeClasses.ExecuteLogin</td>
+<td></td>
+<td>0</td>
+<td>executeClasses.ExecuteLogin@1fc2b765</td></tr>
+<tr>
+<td title='executeClasses.ExecuteLogin.verifyUserIsAbleToClickRemembermeCheckBox()'><b>verifyUserIsAbleToClickRemembermeCheckBox</b><br>Test class: executeClasses.ExecuteLogin</td>
+<td></td>
+<td>0</td>
+<td>executeClasses.ExecuteLogin@1fc2b765</td></tr>
+</table><p>
+</body>
+</html>
